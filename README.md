@@ -6,6 +6,7 @@ Public Android frontend project for RunnersHigh.
 
 - Android app module: `app`
 - Wear OS companion module: `wear`
+- GPX/course creator reference code: `gpxapi`
 - Gradle wrapper and version catalog
 - Compose UI, app navigation, repositories, DTOs, and device integrations used by the app
 
@@ -15,6 +16,12 @@ Public Android frontend project for RunnersHigh.
 - Naver Maps credentials
 - Cloud Functions/backend source
 - Release builds, APK/AAB files, keystores, and generated build output
+
+## Project Structure
+
+- `app`: Main Android phone app. This is the primary module to open and run.
+- `wear`: Wear OS companion app for heart-rate collection.
+- `gpxapi`: Legacy/reference Android code used while building GPX, course creator, POI, route, and course-list behavior. Secrets in this folder have been replaced with placeholders.
 
 ## Local Setup
 

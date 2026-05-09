@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        maven {
+           // url 'https://navermaps.github.io/android-map-sdk/repo/'
+            url 'https://repository.map.naver.com/archive/maven'
+        }
+
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {url "https://repository.map.naver.com/archive/maven" }
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "My Application"
+include ':app'
