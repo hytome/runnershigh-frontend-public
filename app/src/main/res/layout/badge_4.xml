@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#E5F3CC"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badge_4"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/text_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toStartOf="@+id/iv_lock_badge"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/badge_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="꾸준한 러닝 습관 만들기"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+            <TextView
+                android:id="@+id/badge_description_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30일 동안 매일 러닝 목표를 달성하세요!"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_lock_badge"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_lock"
+            app:tint="#AAAAAA"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="잠금 아이콘"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_content_layout"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/badge_detail_4"
+                android:text="30일 연속 러닝"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/badge_progress_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/30"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <ProgressBar
+                android:id="@+id/badge_progress_bar_4"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:progress="1"
+                android:max="30"
+                android:progressTint="#86B94E"
+                android:progressBackgroundTint="#CCCCCC"
+                android:layout_below="@id/badge_detail_4"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RunnersHigh</string>
+    <string name="default_web_client_id">
+        YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com
+    </string>
+     <string name="badge_error_message">배지 정보를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.</string>
+</resources>

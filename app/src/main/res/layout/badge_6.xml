@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#E5F3CC"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badge_6"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/badge_title_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="꾸준한 러닝 목표 달성"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/badge_description_6"
+                android:text="15일 동안 매일 러닝 목표 달성"
+                android:textSize="10sp"
+                android:textColor="#666666"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/badge_date_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023.10.15"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_check"
+                app:tint="#86B94E"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="완료 아이콘"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPLETE!"
+                android:textSize="10sp"
+                android:textColor="#86B94E"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

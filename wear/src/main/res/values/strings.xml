@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RunnersHigh Wear HR</string>
+    <string name="hr_notification_channel">Heart rate streaming</string>
+    <string name="hr_notification_text">심박 측정/전송 중</string>
+    <string name="wear_title">RUNNERS HIGH</string>
+    <string name="wear_subtitle_ready">폰 앱 명령을 기다리는 중입니다.</string>
+    <string name="wear_subtitle_disconnected">스마트폰 앱 연결을 확인해주세요.</string>
+    <string name="wear_waiting_button">WAIT</string>
+    <string name="wear_stat_label_hr">실시간 심박</string>
+    <string name="wear_stat_hr_value">%1$d bpm</string>
+    <string name="wear_stat_empty">측정 대기</string>
+    <string name="tile_heart_rate">❤️ 심박수: %1$s</string>
+    <string name="tile_heart_rate_waiting">측정 중</string>
+    <string name="tile_exercise_time">⏱ 운동 시간: %1$s</string>
+    <string name="tile_open_app">앱 열기</string>
+</resources>
