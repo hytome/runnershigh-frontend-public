@@ -4,6 +4,8 @@
 
 이 레포는 프론트 개발자가 Android Studio에서 바로 열어 앱 화면, 러닝 플로우, 코스 크리에이터, Wear OS 연동 코드를 확인하고 개발할 수 있도록 정리한 버전입니다. 공개 레포이기 때문에 Firebase, Naver Maps, Cloud Run 같은 실제 키와 엔드포인트는 placeholder로 교체되어 있습니다.
 
+> 중요: 공개 레포를 그대로 빌드하면 실제 백엔드가 아니라 `https://example.com/...` placeholder로 API 요청이 나갑니다. 로그인 `405`, 회원가입 `404`가 보이면 [로그인 405 / 회원가입 404 문제 해결](docs/RUNTIME_API_TROUBLESHOOTING_KO.md)을 먼저 확인하세요.
+
 ## 먼저 보면 좋은 문서
 
 - [로컬 실행 가이드](docs/SETUP_KO.md): 처음 클론한 뒤 Android Studio에서 여는 방법
@@ -11,6 +13,7 @@
 - [프로젝트 구조](docs/PROJECT_STRUCTURE_KO.md): `app`, `wear`, `gpxapi`가 각각 무엇인지
 - [기능별 코드 지도](docs/FEATURE_MAP_KO.md): 로그인, 러닝, 코스, 활동, 배지 기능이 어디에 있는지
 - [민감정보 설정](docs/SECRETS_KO.md): 공개 레포에서 빠진 키를 로컬에 넣는 방법
+- [로그인 405 / 회원가입 404 문제 해결](docs/RUNTIME_API_TROUBLESHOOTING_KO.md): API 주소가 placeholder일 때 생기는 문제
 - [코스/GPX 가이드](docs/COURSE_GPX_KO.md): 코스 크리에이터와 GPX 관련 코드 흐름
 - [프론트 개발 협업 규칙](docs/CONTRIBUTING_KO.md): 브랜치, 커밋, 확인 절차
 

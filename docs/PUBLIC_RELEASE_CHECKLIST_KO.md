@@ -41,3 +41,5 @@ rg -n "(AIza|secret|client_secret|Bearer|Authorization|run\.app|firebasestorage|
 - Naver Maps/NCP 키는 `secrets.properties.example`만 제공
 - `gpxapi` 안에 주석으로 남아 있던 키도 placeholder로 교체
 
+이 상태는 공개용으로 안전하지만, 실제 앱처럼 로그인/회원가입을 확인하려면 개발자가 `ApiEndpoints.kt`의 placeholder URL을 실제 팀 백엔드 URL로 바꿔야 합니다.
+

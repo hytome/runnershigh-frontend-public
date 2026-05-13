@@ -49,6 +49,8 @@ Firebase 콘솔에서 받은 실제 `google-services.json` 내용으로 교체�
 
 공개 레포의 API 주소는 실제 Cloud Run URL이 아니라 placeholder입니다.
 
+이 설정이 빠지면 앱이 `https://example.com/...`으로 요청을 보내므로 로그인에서 `405`, 회원가입에서 `404` 같은 오류가 날 수 있습니다.
+
 수정 위치:
 
 ```text
@@ -56,6 +58,8 @@ app/src/main/java/com/example/runnershigh/data/remote/ApiEndpoints.kt
 ```
 
 실제 서버와 연동하려면 `https://example.com/...` 값을 운영 또는 개발 서버 URL로 바꿔야 합니다.
+
+문제가 났을 때는 [로그인 405 / 회원가입 404 문제 해결](RUNTIME_API_TROUBLESHOOTING_KO.md)을 확인하세요.
 
 ## 이미 노출된 키가 의심될 때
 
